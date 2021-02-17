@@ -399,6 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundPrefab: {fileID: 5584527158432481005, guid: 1e8f0d4926d0e0e4cb934b2b53e3bebc,
     type: 3}
+  maxStep: 1.2
 --- !u!4 &1183079706
 Transform:
   m_ObjectHideFlags: 0
