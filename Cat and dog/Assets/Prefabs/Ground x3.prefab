@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 4877558141886090008}
   - component: {fileID: 8292539493848358452}
   - component: {fileID: -7540527701079373451}
+  - component: {fileID: -5842141005677823953}
   m_Layer: 0
   m_Name: Ground x3
   m_TagString: Untagged
@@ -161,6 +162,19 @@ MonoBehaviour:
     value: {x: 0, y: 0, z: 0}
     space: 1
   ignoreTimescale: 0
+--- !u!114 &-5842141005677823953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5584527158432481005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b5115062161274fb5275bcf901fc10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestruction: 7
 --- !u!1 &6349027067828941969
 GameObject:
   m_ObjectHideFlags: 0
