@@ -26,6 +26,7 @@ public class GroundGenerator : MonoBehaviour
 
         Vector3 targetPrefabPosition = new Vector3(this.transform.position.x, newY, this.transform.position.z);
         previousGroundY = targetPrefabPosition.y;
+        
         Instantiate(groundPrefabs[Random.Range(0, groundPrefabs.Length)], targetPrefabPosition, Quaternion.identity);
     }
 }
