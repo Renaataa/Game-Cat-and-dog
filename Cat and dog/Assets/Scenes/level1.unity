@@ -414,8 +414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba2a60a44421e5489d1b1485701517d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundPrefab: {fileID: 5584527158432481005, guid: 1e8f0d4926d0e0e4cb934b2b53e3bebc,
-    type: 3}
+  groundPrefabs:
+  - {fileID: 5584527158432481005, guid: 1e8f0d4926d0e0e4cb934b2b53e3bebc, type: 3}
+  - {fileID: 5584527158432481005, guid: 4ca772ced7d86f545b17d1a18b6b592f, type: 3}
+  - {fileID: 5584527158432481005, guid: b45e149509d9f40498abb240fbe6a095, type: 3}
   maxHeight: 0.5
   minHeight: -2.5
   maxStep: 1.2
