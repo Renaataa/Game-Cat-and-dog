@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\AutoDestruction.cs" />
      <Compile Include="Assets\Scripts\GroundGenerator.cs" />
      <Compile Include="Assets\Scripts\HeroController.cs" />
+     <Compile Include="Assets\Scripts\SymmetricXPosition.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Program Files/Unity/Editor/2019.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
