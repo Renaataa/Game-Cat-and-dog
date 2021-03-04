@@ -5,6 +5,8 @@ using UnityEngine;
 public class GroundGenerator : MonoBehaviour
 {
     public GameObject groundPrefab;
+    public float maxHeight;
+    public float minHeight;
     public float maxStep;
     private float previousGroundY = -2.38f;
 
@@ -16,7 +18,8 @@ public class GroundGenerator : MonoBehaviour
 
     void GenerateNewGround()
     {
-        Vector3 targetPrefabPosition = new Vector3(this.transform.position.x, Random.Range(-3f, maxStep + previousGroundY), this.transform.position.z);
+        maxHeight = maxStep + previousGroundY;
+        Vector3 targetPrefabPosition = new Vector3(this.transform.position.x, Random.Range(minHeight, maxHeight), this.transform.position.z);
         previousGroundY = targetPrefabPosition.y;
         Instantiate(groundPrefab, targetPrefabPosition, Quaternion.identity);
     }
