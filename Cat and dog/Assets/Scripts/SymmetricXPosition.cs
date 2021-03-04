@@ -11,6 +11,8 @@ public class SymmetricXPosition : MonoBehaviour
 
     float startTime;
     private float currentTime;
+    public float randomYMax;
+    public float randomYMin;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,7 @@ public class SymmetricXPosition : MonoBehaviour
 
     void setNewPositions(){
         currentPosition = transform.position;
-        targetPosition = new Vector3 (Mathf.Abs(hero.transform.position.x), transform.position.y, transform.position.z);
+        targetPosition = new Vector3 (Mathf.Abs(hero.transform.position.x), Random.Range(randomYMin, randomYMax), transform.position.z);
         startTime = Time.time;
     }
 }
