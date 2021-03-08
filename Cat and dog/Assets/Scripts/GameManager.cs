@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    public int currentLevel;
+    public int currentLevel = 0;
     public string[] levelNames;
 
     void Awake(){
@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void OpenLevel(int newLevelNum)
     {
+        Debug.Log(levelNames[newLevelNum]);
         SceneManager.LoadScene(levelNames[newLevelNum]);
     }
 }

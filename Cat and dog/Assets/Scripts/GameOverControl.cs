@@ -11,6 +11,7 @@ public class GameOverControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         gameOverCanvas = GameObject.Find("GameOverCanvas");
         if(gameOverCanvas != null){
             failurePanel = gameOverCanvas.transform.GetChild(0).gameObject;
@@ -22,10 +23,12 @@ public class GameOverControl : MonoBehaviour
         if(other.gameObject.tag == "ballon"){
             Debug.Log("Sukces!");
             successPanel.SetActive(true);
+            Time.timeScale = 0;
         }
         else if(other.gameObject.tag == "border"){
             Debug.Log("Porazka.");
             failurePanel.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
