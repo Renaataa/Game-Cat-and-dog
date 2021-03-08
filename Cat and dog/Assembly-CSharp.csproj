@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\AutoDestruction.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameOverControl.cs" />
+     <Compile Include="Assets\Scripts\GameOverPanelController.cs" />
      <Compile Include="Assets\Scripts\GroundGenerator.cs" />
      <Compile Include="Assets\Scripts\HeroController.cs" />
      <Compile Include="Assets\Scripts\SymmetricXPosition.cs" />

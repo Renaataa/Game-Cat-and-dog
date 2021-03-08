@@ -455,11 +455,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundPrefabs:
-  - {fileID: 5584527158432481005, guid: 1e8f0d4926d0e0e4cb934b2b53e3bebc, type: 3}
-  - {fileID: 5584527158432481005, guid: b45e149509d9f40498abb240fbe6a095, type: 3}
-  - {fileID: 5584527158432481005, guid: 4ca772ced7d86f545b17d1a18b6b592f, type: 3}
-  - {fileID: 5584527158432481005, guid: a49f866c5e5060948b78168ccf5e14a8, type: 3}
-  - {fileID: 5584527158432481005, guid: 2c3d191b46914964c9edf56231435685, type: 3}
   - {fileID: 5584527158432481005, guid: ca47dc61ed389134d857f9578393fc90, type: 3}
   maxHeight: 0.5
   minHeight: -2.5
@@ -1170,6 +1165,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4932980539177693351, guid: 4a8c8e2102dfb044bab38770d9010fe3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4932980539782381554, guid: 4a8c8e2102dfb044bab38770d9010fe3,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1279,6 +1279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameOverCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932980539941396646, guid: 4a8c8e2102dfb044bab38770d9010fe3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a8c8e2102dfb044bab38770d9010fe3, type: 3}
