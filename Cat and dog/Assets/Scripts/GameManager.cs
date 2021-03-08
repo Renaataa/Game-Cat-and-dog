@@ -23,12 +23,23 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(PlayerPrefs.HasKey("currentLevel")){
+            currentLevel = PlayerPrefs.GetInt("currentLevel");
+        }
     }
 
     public void OpenLevel(int newLevelNum)
     {
         Debug.Log(levelNames[newLevelNum]);
         SceneManager.LoadScene(levelNames[newLevelNum]);
+    }
+
+    public void OpenCurrentLevel(){
+        OpenLevel(currentLevel);
+    }
+
+    public void CloseApplication(){
+        PlayerPrefs.SetInt("currentLevel", currentLevel);
+        Application.Quit();
     }
 }
