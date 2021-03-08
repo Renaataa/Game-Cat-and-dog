@@ -1165,11 +1165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4932980539177693351, guid: 4a8c8e2102dfb044bab38770d9010fe3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4932980539782381554, guid: 4a8c8e2102dfb044bab38770d9010fe3,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1279,11 +1274,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameOverCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 4932980539941396646, guid: 4a8c8e2102dfb044bab38770d9010fe3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a8c8e2102dfb044bab38770d9010fe3, type: 3}
