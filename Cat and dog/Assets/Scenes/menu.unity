@@ -311,6 +311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8255a70920e496459de1c434ca0f929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevel: 0
+  levelNames:
+  - level1
+  - level2
 --- !u!4 &300182008
 Transform:
   m_ObjectHideFlags: 0
@@ -361,8 +365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -255.21558, y: -168.27191}
+  m_AnchoredPosition: {x: 0, y: -6.33}
+  m_SizeDelta: {x: -255.21558, y: -180.9405}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &349271488
 MonoBehaviour:
@@ -647,7 +651,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1310817199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 300182007}
+        m_MethodName: OpenLevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1310817199
 MonoBehaviour:
   m_ObjectHideFlags: 0
