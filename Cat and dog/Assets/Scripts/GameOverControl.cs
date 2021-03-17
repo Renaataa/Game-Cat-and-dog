@@ -11,6 +11,7 @@ public class GameOverControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("GameOverControl.Start");
         Time.timeScale = 1;
         gameOverCanvas = GameObject.Find("GameOverCanvas");
         if(gameOverCanvas != null){
@@ -20,6 +21,7 @@ public class GameOverControl : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
+        Debug.Log("GameOverControl.OnTriggerEnter2D");
         if(other.gameObject.tag == "ballon"){
             Debug.Log("Sukces!");
             successPanel.SetActive(true);

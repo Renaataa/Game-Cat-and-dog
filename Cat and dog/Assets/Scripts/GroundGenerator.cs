@@ -14,11 +14,13 @@ public class GroundGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("GroundGenerator.Start");
         InvokeRepeating("GenerateNewGround", 0, 2.6f);
     }
 
     void GenerateNewGround()
     {
+        Debug.Log("GroundGenerator.GenerateNewGround");
         float newY;
         do{
             newY = Random.Range(minHeight, maxHeight);

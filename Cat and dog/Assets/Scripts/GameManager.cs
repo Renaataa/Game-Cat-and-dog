@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,13 +10,16 @@ public class GameManager : MonoBehaviour
     public string[] levelNames;
 
     void Awake(){
+        Debug.Log("GameManager.Awake");
         if(instance == null){
             instance = this;
         }
         else if(instance != this){
-            Destroy(instance);
-            instance = this;
-            // Destroy(this.gameObject);
+            //Debug.Log(currentLevel);
+            //instance = null;
+            //instance = this;
+            //Debug.Log(currentLevel);
+            //Destroy(this.gameObject);
         }
 
         DontDestroyOnLoad(this.gameObject);
@@ -25,23 +28,26 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerPrefs.HasKey("currentLevel")){
+        Debug.Log("GameManager.Start");
+        /*if(PlayerPrefs.HasKey("currentLevel")){
             currentLevel = PlayerPrefs.GetInt("currentLevel");
-        }
+        }*/
     }
 
     public void OpenLevel(int newLevelNum)
     {
-        Debug.Log(levelNames[newLevelNum]);
+        Debug.Log("GameManager.OpenLevel");
         SceneManager.LoadScene(levelNames[newLevelNum]);
     }
 
     public void OpenCurrentLevel(){
+        Debug.Log("GameManager.OpenCurrentLevel "+currentLevel);
         OpenLevel(currentLevel);
     }
 
     public void CloseApplication(){
-        PlayerPrefs.SetInt("currentLevel", currentLevel);
+        Debug.Log("GameManager.CloseApplication");
+        //PlayerPrefs.SetInt("currentLevel", currentLevel);
         Application.Quit();
     }
 }

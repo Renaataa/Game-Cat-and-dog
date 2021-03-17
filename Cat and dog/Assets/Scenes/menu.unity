@@ -509,7 +509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643901473}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -444.3, y: -200.9, z: 0}
+  m_LocalPosition: {x: -357.6, y: -201.5, z: 0}
   m_LocalScale: {x: 1.8282925, y: 1.5723763, z: 1}
   m_Children: []
   m_Father: {fileID: 1107949458}
@@ -944,8 +944,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 300182007}
-        m_MethodName: OpenLevel
-        m_Mode: 3
+        m_MethodName: OpenCurrentLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

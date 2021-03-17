@@ -8,7 +8,8 @@ public class AutoDestruction : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
+        Debug.Log("AutoDestruction.Start");
         Destroy(this.gameObject, timeToDestruction);
     }
 

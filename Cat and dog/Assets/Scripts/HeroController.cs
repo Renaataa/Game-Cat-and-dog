@@ -12,6 +12,7 @@ public class HeroController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("HeroController.Start");
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         
@@ -20,6 +21,7 @@ public class HeroController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("HeroController.Update");
         if (Input.GetMouseButtonDown(0) && isGrounded)
         {
             anim.SetTrigger("Jump");
@@ -28,12 +30,14 @@ public class HeroController : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other){
+        Debug.Log("HeroController.OnTriggerEnter2D");
         if(other.tag == "ground"){
             isGrounded = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other){
+        Debug.Log("HeroController.OnTriggerExit2D");
         if(other.tag == "ground"){
             isGrounded = false;
         }
